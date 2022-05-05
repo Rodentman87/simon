@@ -1,0 +1,20 @@
+{
+	"name": "simon-says",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"license": "MIT",
+	"dependencies": {
+		"discord.js": "^13.6.0",
+		"dotenv": "^16.0.0",
+		"slashasaurus": "^0.6.0"
+	},
+	"scripts": {
+		"start": "node .",
+		"build": "tsc",
+		"start:dev": "yarn build && yarn start"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.31",
+		"typescript": "^4.6.4"
+	}
+}
