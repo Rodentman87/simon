@@ -14,7 +14,8 @@ const client = new SlashasaurusClient(
 		restRequestTimeout: 30 * 1000,
 	},
 	{
-		devServerId: "561807594516381749",
+		// @ts-ignore
+		devServerId: process.env.SERVER_ID,
 		pageTtl: 5000,
 		storePageState: async (
 			messageId: string,
