@@ -3,13 +3,13 @@ import SimonSaysPage from "../../pages/SimonSays";
 
 export default new SlashCommand(
 	{
-		name: "simon-says",
-		description: "Start a game of Simon Says.",
+		name: "simon",
+		description: "Start a game of Simon.",
 		options: [],
 	},
 	{
 		run: (interaction) => {
-			console.log("Starting a game of simon says for " + interaction.user.tag);
+			console.log("Starting a game of simon for " + interaction.user.tag);
 			const page = new SimonSaysPage();
 			page.sendAsReply(interaction, true);
 		},
